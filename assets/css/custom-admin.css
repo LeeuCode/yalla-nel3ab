@@ -1,0 +1,337 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css);
+body {
+    background-color: #f2f2f2;
+}
+
+*,
+.metabox-holder .postbox>h3,
+.metabox-holder .stuffbox>h3,
+.metabox-holder h2.hndle,
+.metabox-holder h3.hndle,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Cairo", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Cairo", sans-serif !important;
+}
+
+#wpadminbar {
+    background: #2271b1;
+}
+
+#adminmenu li.menu-top {
+    border-bottom: 1px #e9e9e9 dashed;
+}
+
+#adminmenu {
+    clear: right;
+    margin: 12px 0;
+    padding: 0;
+    list-style: none;
+}
+
+#adminmenu,
+#adminmenu .wp-submenu,
+#adminmenuback,
+#adminmenuwrap {
+    width: 250px;
+    background-color: #ffffff;
+}
+
+#wpcontent,
+#wpfooter {
+    margin-right: 250px;
+}
+
+#adminmenu div.wp-menu-image:before {
+    color: #2271b1 !important;
+}
+
+#adminmenu a {
+    color: #2c3338;
+}
+
+ul.wp-submenu.wp-submenu-wrap {
+    background-color: #f9f9f9 !important;
+}
+
+ul.wp-submenu.wp-submenu-wrap a {
+    color: #2c3338;
+}
+
+#adminmenu li.wp-has-current-submenu div.wp-menu-image:before {
+    color: #fff !important;
+}
+
+#adminmenu .wp-submenu {
+    right: 250px;
+}
+
+#adminmenu li.wp-has-submenu.wp-not-current-submenu.opensub:hover:after {
+    border-left-color: #f9f9f9 !important;
+}
+
+.wp-has-current-submenu .wp-submenu li a {
+    color: #2c3338 !important;
+}
+
+#adminmenu .wp-submenu li.current a {
+    color: #2271b1 !important;
+}
+
+#adminmenu .update-plugins {
+    float: left;
+}
+
+#adminmenu .wp-submenu a {
+    color: #2c3338;
+}
+
+#adminmenu .wp-menu-image img {
+    opacity: .9;
+}
+
+.postbox,
+.postbox-header {
+    border-color: #f1f1f1;
+}
+
+.postbox .handle-order-higher,
+.postbox .handle-order-lower {
+    color: #2271b1;
+}
+
+#menu-management .menu-edit,
+#menu-settings-column .accordion-container,
+.comment-ays,
+.feature-filter,
+.manage-menus,
+.menu-item-handle,
+.popular-tags,
+.stuffbox,
+.widget-inside,
+.widget-top,
+.widgets-holder-wrap,
+.wp-editor-container,
+p.popular-tags,
+table.widefat {
+    border: 1px solid #ebebec;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.widefat thead td,
+.widefat thead th {
+    border-bottom: 1px solid #efeeee;
+}
+
+.widefat tfoot tr td,
+.widefat tfoot tr th,
+.widefat thead tr td,
+.widefat thead tr th {
+    color: #ffffff;
+    background-color: #2c3338;
+}
+
+th.sortable a,
+th.sorted a {
+    color: #fff;
+}
+
+.sorting-indicator:before {
+    color: #efeeee;
+}
+
+.wp-list-table tfoot {
+    display: none !important;
+}
+
+th.sorted.asc a:focus .sorting-indicator.desc:before,
+th.sorted.asc:hover .sorting-indicator.desc:before,
+th.sorted.desc a:focus .sorting-indicator.asc:before,
+th.sorted.desc:hover .sorting-indicator.asc:before {
+    color: #e1e5e8;
+}
+
+input[type=color],
+input[type=date],
+input[type=datetime-local],
+input[type=datetime],
+input[type=email],
+input[type=month],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type=text],
+input[type=time],
+input[type=url],
+input[type=week],
+select,
+textarea {
+    border: 1px solid #dadbdd;
+}
+
+.wp-core-ui .button-secondary:active,
+.wp-core-ui .button,
+.wp-core-ui .button:active {
+    background: #2271b1;
+    border-color: #2271b1;
+    box-shadow: none;
+    color: #fff;
+}
+
+.wrap .add-new-h2,
+.wrap .add-new-h2:active,
+.wrap .page-title-action,
+.wrap .page-title-action:active {
+    background: #2c3338;
+    border-color: #2c3338;
+    color: #fff;
+}
+
+.wp-core-ui select {
+    color: #2c3338;
+    border-color: #e1e1e1;
+}
+
+.tablenav.bottom {
+    display: none;
+}
+
+.wp-heading-inline {
+    font-family: "Cairo", sans-serif !important;
+}
+
+.preview.button {
+    background: #2c3338;
+    border-color: #2c3338;
+    color: #fff;
+}
+
+
+/* #wpadminbar #wp-admin-bar-wp-logo>.ab-item {
+    padding: 0 7px;
+    background-image: url(https://www.qeematech.net/wp-content/uploads/2020/10/favico.png) !important;
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+}
+
+#wpadminbar #wp-admin-bar-wp-logo>.ab-item .ab-icon:before {
+    content: " ";
+    top: 2px;
+} */
+
+.w-33 {
+    width: 33.333%;
+}
+
+.certificate {
+    width: 100%;
+    padding-bottom: 150%;
+    background-size: cover;
+    background-position: top;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    position: relative;
+}
+
+.certificate .content {
+    width: 100%;
+    height: 100%;
+    background-color: #2c333859;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    visibility: hidden;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.download-btn {
+    text-decoration: none;
+    background-color: #2c3338;
+    color: #fff;
+    padding: .5rem .8rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-top: -200%;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.certificate:hover .content {
+    visibility: visible;
+}
+
+.certificate:hover .download-btn {
+    margin-top: 0;
+}
+
+.form-wrap {
+    background: #fff;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.form-wrap h2 {
+    padding: 1rem;
+    background-color: #2271b1;
+    color: #fff;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    font-family: "Cairo", sans-serif;
+}
+
+#addtag {
+    padding: 1rem;
+}
+
+#dashboard_all_users {}
+
+#edit-slug-box,
+.page-title-action,
+.menu-icon-bookings li:last-child,
+.menu-icon-booking-coach .wp-submenu li:nth-child(3),
+.menu-icon-lc_order .wp-submenu li:nth-child(3),
+.menu-icon-booking_champion .wp-submenu li:nth-child(3) {
+    display: none !important;
+}
