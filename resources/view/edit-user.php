@@ -117,5 +117,18 @@ require_once component('heading');
 <script>
     jQuery(document).ready(function($) {
         'use strict';
+
+        $('.upload-preview-image').on('change', function() {
+            if (this.files[0]) {
+                var reader = new FileReader();
+                var image = $(this).prev('img');
+
+                reader.readAsDataURL(this.files[0]);
+
+                reader.onloadend = function() {
+                    image.attr('src', reader.result);
+                };
+            }
+        });
     });
 </script>

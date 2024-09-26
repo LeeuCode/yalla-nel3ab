@@ -16,6 +16,14 @@ Routes::map('academies/section/:term_id/page/:num', function ($params) {
     Routes::load(view('academy/academy-items'), $params, null, 200);
 });
 
+Routes::map('academies/search/:term_id', function ($params) {
+    Routes::load(view('academy/academy-items'), $params, null, 200);
+});
+
+Routes::map('academies/search/:term_id/page/:num', function ($params) {
+    Routes::load(view('academy/academy-items'), $params, null, 200);
+});
+
 Routes::map('booking/academy/:id', function ($params) {
     Routes::load(view('academy/single'), $params, null, 200);
 });

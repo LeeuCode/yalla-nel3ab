@@ -10,14 +10,14 @@ require_once component('heading');
     <div class="row">
         <?php
 
-        $category = 'academies/section/';
+        $category = 'coachs/';
 
         include component('search-categories');
         ?>
 
         <div class="categories-container">
-            <?php
 
+            <?php
             $sections = get_terms(
                 array(
                     'taxonomy' => 'section',
@@ -45,12 +45,11 @@ require_once component('heading');
                             </div>
                         </div> -->
                         </div>
-                        <a hx-get="<?php echo site_url('academies/section/' . $section->term_id . '/'); ?>" hx-swap="innerHTML show:top" hx-trigger="click" hx-target=".app" hx-on::before-request="showLoad()" class="z-index-2 stretched-link"></a>
+                        <a hx-get="<?php echo site_url('coachs/' . $section->term_id . '/'); ?>" hx-swap="innerHTML show:top" hx-trigger="click" hx-target=".app" hx-on::before-request="showLoad()" class="z-index-2 stretched-link"></a>
                     </div>
                 </div>
             <?php endforeach; ?>
         </div>
     </div>
-</div>
 
-<?php require_once component('footer-menu'); ?>
+    <?php require_once component('footer-menu'); ?>

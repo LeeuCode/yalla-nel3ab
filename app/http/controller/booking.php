@@ -8,6 +8,4 @@ if (isset($_POST)) {
     if (!isset($_POST['form_nonce']) && !wp_verify_nonce($_POST['form_nonce'], 'test-nonce') && !is_user_logged_in()) {
         exit;
     }
-
-    
 }

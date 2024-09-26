@@ -9,7 +9,7 @@ require_once component('heading');
 <div class="container">
     <div class="row">
         <div class="col-12">
-            <form action="<?php echo home_url(); ?>" method="GET" class="search-bar my-4">
+            <form hx-get="<?php echo site_url('academies/search/' . $params['term_id'] . '/'); ?>" hx-target=".products-container" method="GET" class="search-bar my-4">
                 <input name="s" type="text" class="py-2 form-control form-control-sm search-input shadow-sm"
                     placeholder="<?php echo __('البحث', 'qeema'); ?>">
 
@@ -17,7 +17,7 @@ require_once component('heading');
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
 
-                <input type="hidden" name="post_type" value="product">
+                <!-- <input type="hidden" name="post_type" value="product"> -->
 
                 <button class="btn btn-search-bar">
                     <i class="fa-solid fa-magnifying-glass"></i>
@@ -52,34 +52,13 @@ require_once component('heading');
 
                 $t = ($count == 3) ? 'hx-get="' . get_next_posts_page_link($query->max_num_pages) . '" hx-trigger="revealed"
                     hx-swap="afterend"' : '';
-        ?>
-                <div class="col-12" <?php echo ($query->max_num_pages) ? $t : ''; ?>>
-                    <div class="shadow-sm mb-3 position-relative">
-                        <img class="img-fluid" src="<?php the_field('basic_image', $post->ID); ?>" alt="">
-                        <div class="position-absolute bottom-0 start-0 p-3">
-                            <h6 class="text-white mb-1">
-                                <?php echo the_title(); ?>
-                            </h6>
-                            <div class="d-flex gap-2 align-items-center">
-                                <span class="text-white small"><?php echo __('تقييم الخدمة', 'qeema'); ?></span>
-                                <div class="user-rate checked  small">
-                                    <input type="radio" name="rate" value="5">
-                                    <input type="radio" name="rate" value="4">
-                                    <input type="radio" name="rate" value="3">
-                                    <input type="radio" name="rate" value="2">
-                                    <input type="radio" name="rate" value="1" checked="">
-                                </div>
-                            </div>
-                        </div>
-                        <a hx-get="<?php echo site_url('booking/academy/' . $post->ID . '/'); ?>" hx-swap="innerHTML show:top"
-                            hx-trigger="click" hx-target=".app" class="z-index-2 stretched-link"></a>
-                    </div>
-                </div>
-            <?php
+
+                include component('block-academy');
+
                 $count++;
             endwhile;
         else:
-            ?>
+        ?>
             <div class="w-75 mx-auto text-center">
                 <img class="w-100 d-block mb-3"
                     src="<?php echo get_template_directory_uri() . '/assets/images/not-found.svg'; ?>" alt="">

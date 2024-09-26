@@ -1,6 +1,6 @@
 <?php
 
-$link = site_url('home/');
+$link = site_url('coachs/categories/');
 
 require_once component('heading');
 
@@ -9,14 +9,12 @@ require_once component('heading');
 <div class="container">
     <div class="row">
         <div class="col-12">
-            <form action="<?php echo home_url(); ?>" method="GET" class="search-bar my-4">
+            <form hx-get="<?php echo site_url('coachs/search/' . $params['term_id'] . '/'); ?>" hx-target="#posts-data" method="GET" class="search-bar my-4">
                 <input name="s" type="text" class="py-2 form-control form-control-sm search-input shadow-sm" placeholder="<?php echo __('البحث', 'qeema'); ?>">
 
                 <button class="btn btn-search-bar">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
-
-                <input type="hidden" name="post_type" value="product">
 
                 <button class="btn btn-search-bar">
                     <i class="fa-solid fa-magnifying-glass"></i>
@@ -40,6 +38,13 @@ require_once component('heading');
             'post_type' => 'coach',
             'posts_per_page' => 4,
             'paged' => $paged,
+            'tax_query' => array(
+                array(
+                    'taxonomy' => 'section',
+                    'field' => 'term_id',
+                    'terms' => array($params['term_id'])
+                )
+            )
         );
         $query = new WP_Query($args);
 

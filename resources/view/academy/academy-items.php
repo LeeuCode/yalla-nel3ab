@@ -5,7 +5,7 @@ $args = array(
     'post_type' => 'academy',
     'posts_per_page' => 4,
     'paged' => $paged,
-	 'tax_query' => array(
+    'tax_query' => array(
         array(
             'taxonomy' => 'section',
             'field' => 'term_id',
@@ -13,6 +13,10 @@ $args = array(
         )
     )
 );
+
+if (input_exist('s', 'get')) {
+    $args['s'] = input_exist('s', 'get');
+}
 
 $query = new WP_Query($args);
 

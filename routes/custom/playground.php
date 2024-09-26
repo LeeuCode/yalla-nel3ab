@@ -16,6 +16,15 @@ Routes::map('playgrounds/:id/page/:num', function ($params) {
     Routes::load(view('playground/playground-items'), $params, null, 200);
 });
 
+Routes::map('playgrounds/search/:id', function ($params) {
+    Routes::load(view('playground/playground-items'), $params, null, 200);
+});
+
+Routes::map('playgrounds/search/:id/page/:num', function ($params) {
+    Routes::load(view('playground/playground-items'), $params, null, 200);
+});
+
+
 Routes::map('playground/single/:id', function ($params) {
     Routes::load(view('playground/single-playground'), $params, null, 200);
 });

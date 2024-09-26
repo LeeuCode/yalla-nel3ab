@@ -1,10 +1,11 @@
 <?php
+$post_id = $params['id'];
 
-$link = site_url('coachs/');
+$sectionID = get_first_term_by_id($post_id, 'section');
+
+$link = site_url('coachs/' . $sectionID . '/');
 
 require_once component('heading');
-
-$post_id = $params['id'];
 ?>
 
 <div class="container">

@@ -5,6 +5,11 @@ $args = array(
     'posts_per_page' => 4,
     'paged' => $paged,
 );
+
+if (input_exist('s', 'get')) {
+    $args['s'] = input_exist('s', 'get');
+}
+
 $query = new WP_Query($args);
 
 $count = 0;

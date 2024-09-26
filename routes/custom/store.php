@@ -14,6 +14,26 @@ Routes::map('products/:term_id', function ($params) {
     Routes::load(view('store/products'), $params, null, 200);
 });
 
+Routes::map('products/:term_id/page/:num', function ($params) {
+    Routes::load(view('store/product-items'), $params, null, 200);
+});
+
+Routes::map('store/search', function ($params) {
+    Routes::load(view('store/product-items'), $params, null, 200);
+});
+
+Routes::map('store/search/page/:num', function ($params) {
+    Routes::load(view('store/product-items'), $params, null, 200);
+});
+
+Routes::map('store/products/search/:term_id', function ($params) {
+    Routes::load(view('store/product-items'), $params, null, 200);
+});
+
+Routes::map('store/products/search/:term_id/page/:num', function ($params) {
+    Routes::load(view('store/product-items'), $params, null, 200);
+});
+
 Routes::map('product/single/:id', function ($params) {
     Routes::load(view('store/single-product'), $params, null, 200);
 });

@@ -13,6 +13,11 @@ $args = array(
         )
     )
 );
+
+if (input_exist('s', 'get')) {
+    $args['s'] = input_exist('s', 'get');
+}
+
 $query = new WP_Query($args);
 
 $count = 0;

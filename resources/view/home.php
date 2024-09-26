@@ -89,7 +89,7 @@ if ($logoID) {
                         <?php echo __('كورة قدم - تنس - سله- طايرة - بولنج - بوكس', 'qeema'); ?>
                     </p>
                 </div>
-                <a hx-get="<?php echo site_url('coachs/'); ?>" hx-swap="innerHTML show:top" hx-trigger="click" hx-target=".app" hx-on::before-request="showLoad()" class="stretched-link"></a>
+                <a hx-get="<?php echo site_url('coachs/categories/'); ?>" hx-swap="innerHTML show:top" hx-trigger="click" hx-target=".app" hx-on::before-request="showLoad()" class="stretched-link"></a>
             </div>
         </div>
 
@@ -103,6 +103,19 @@ if ($logoID) {
                     </p>
                 </div>
                 <a hx-get="<?php echo site_url('championships/'); ?>" hx-swap="innerHTML show:top" hx-trigger="click" hx-target=".app" hx-on::before-request="showLoad()" class="stretched-link"></a>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="d-flex aling-items-center gap-2 py-3 border-bottom mb-3 position-relative">
+                <img class="icon-sm" src="<?php echo get_template_directory_uri() . '/assets/images/league.png'; ?>" alt="">
+                <div>
+                    <h6 class="fw-bold mb-1 small"><?php echo __('جداول البطولات', 'qeema'); ?></h6>
+                    <p class="text-secondary font-x-11 mb-0">
+                        <?php echo __('كورة قدم - تنس - سله- طايرة - بولنج - بوكس', 'qeema'); ?>
+                    </p>
+                </div>
+                <a hx-get="<?php echo site_url('championships/schedule/'); ?>" hx-swap="innerHTML show:top" hx-trigger="click" hx-target=".app" hx-on::before-request="showLoad()" class="stretched-link"></a>
             </div>
         </div>
 

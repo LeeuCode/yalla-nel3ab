@@ -22,6 +22,14 @@ Routes::map('edit/user/:id', function ($params) {
     Routes::load(view('edit-user'), $params, null, 200);
 });
 
+Routes::map('championships/schedule/', function ($params) {
+    Routes::load(view('championships/schedule'), $params, null, 200);
+});
+
+Routes::map('championships/schedule/table/:id', function ($params) {
+    Routes::load(view('championships/table'), $params, null, 200);
+});
+
 Routes::map('home/', function ($params) {
     Routes::load(view('home'), $params, null, 200);
 });
@@ -47,10 +55,6 @@ require dirname(__FILE__) . '/custom/championships.php';
 Routes::map('gest/login', function ($params) {
     Routes::load(view('gest-login'), $params, null, 200);
 });
-
-// Routes::map('championships', function ($params) {
-//     Routes::load(view('championships'), $params, null, 200);
-// });
 
 Routes::map('payment/code/:code/msg/:msg', function ($params) {
     Routes::load(view('payment-status'), $params, null, 200);
@@ -102,4 +106,8 @@ Routes::map('payment/status/:id', function ($params) {
 
 Routes::map('chat/save', function ($params) {
     Routes::load(controller('chat-save'), $params, null, 200);
+});
+
+Routes::map('search/category/', function ($params) {
+    Routes::load(controller('search-category'), $params, null, 200);
 });
