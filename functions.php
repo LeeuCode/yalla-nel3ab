@@ -201,6 +201,18 @@ function uploadFile($file)
     }
 }
 
+function user_count_meta($user_id, $meta_key, $post_id)
+{
+    global $wpdb;
+
+    $query = $wpdb->get_var("SELECT COUNT(*) FROM {$wpdb->prefix}usermeta 
+                            WHERE user_id = $user_id
+                            AND meta_key = '$meta_key'
+                            AND meta_value = '$post_id' ");
+
+    return $query;
+}
+
 function input_exist($name, $type = 'post')
 {
     $requset = $_POST;
@@ -263,8 +275,6 @@ function get_first_term_by_id($post_id, $taxonomy, $output = 'term_id')
 {
     if (isset($post_id) && isset($taxonomy)) {
         $terms = get_the_terms($post_id, $taxonomy);
-
-        //    var_dump($terms);
 
         if (!empty($terms) && !isset($terms->errors)) {
             $term = array_shift($terms);

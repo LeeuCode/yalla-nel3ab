@@ -287,6 +287,21 @@ a {
     background-color: #f1f1f1;
 }
 
+.faveorite-btn {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0.5rem !important;
+    left: .5rem !important;
+    color: #dc3545;
+}
+
+
+/* .product img {
+    height: 200px;
+} */
+
 
 /*=============================
    [03. Steps like Wizard ]

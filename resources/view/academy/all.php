@@ -53,7 +53,7 @@ require_once component('heading');
                 $t = ($count == 3) ? 'hx-get="' . get_next_posts_page_link($query->max_num_pages) . '" hx-trigger="revealed"
                     hx-swap="afterend"' : '';
 
-                include component('block-academy');
+                include component('academy-block');
 
                 $count++;
             endwhile;

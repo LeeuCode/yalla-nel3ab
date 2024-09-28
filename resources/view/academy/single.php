@@ -41,7 +41,7 @@ $post_id = $params['id'];
                             <input type="radio" name="rate" value="4">
                             <input type="radio" name="rate" value="3">
                             <input type="radio" name="rate" value="2">
-                            <input type="radio" name="rate" value="1" checked="">
+                            <input type="radio" name="rate" value="1">
                         </div>
                     </div>
                 </div>

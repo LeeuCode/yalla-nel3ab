@@ -149,11 +149,7 @@ if ($logoID) {
     <img class="position-absolute bottom-0 end-0 w-50" src="<?php echo get_template_directory_uri() . '/assets/images/Frame.png'; ?>" alt="">
 </div>
 
-<?php
-require_once component('footer-menu');
-
-get_template_part('template-parts/marriage-search');
-?>
+<?php require_once component('footer-menu'); ?>
 
 <script>
     jQuery(document).ready(function($) {

@@ -72,6 +72,10 @@ Routes::map('notification/', function ($params) {
     Routes::load(view('notification'), $params, null, 200);
 });
 
+Routes::map('favorite', function ($params) {
+    Routes::load(view('favorite'), $params, null, 200);
+});
+
 /*=============================
     [02. POST Routes]
 ===============================*/
@@ -110,4 +114,8 @@ Routes::map('chat/save', function ($params) {
 
 Routes::map('search/category/', function ($params) {
     Routes::load(controller('search-category'), $params, null, 200);
+});
+
+Routes::map('action/:fun/:id', function ($params) {
+    Routes::load(component($params['fun']), $params, null, 200);
 });
