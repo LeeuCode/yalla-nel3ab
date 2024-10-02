@@ -21,3 +21,11 @@ Routes::map('gyms/search/page/:num', function ($params) {
 Routes::map('gym/single/:id', function ($params) {
     Routes::load(view('gym/single-gym'), $params, null, 200);
 });
+
+Routes::map('city/gyms', function ($params) {
+    Routes::load(component('gyms-city'), $params, null, 200);
+});
+
+Routes::map('city/gyms/page/:num', function ($params) {
+    Routes::load(component('gyms-city'), $params, null, 200);
+});

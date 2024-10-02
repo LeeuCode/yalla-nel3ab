@@ -100,6 +100,10 @@
                     </a>
                 </div>
             </div>
+			
+			<a href="#" class="d-block text-center text-danger font-x-12 position-fixed- bottom-0 pt-3  w-100">
+                    <?php echo __('جميع الحقوق محفوظه © ندي السيد محمد', 'qeema'); ?>
+                </a>
         </div>
     </div>
 </div>

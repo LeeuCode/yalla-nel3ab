@@ -70,6 +70,10 @@
                     class="text-center text-secondary small">
                     <?php echo __('تصفح كزائر', 'qeema'); ?>
                 </a>
+				
+				<a href="#" class="text-center text-danger font-x-12 position-fixed bottom-0 py-3 text-center w-100">
+                    <?php echo __('جميع الحقوق محفوظه © ندي السيد محمد', 'qeema'); ?>
+                </a>
             </div>
         </div>
     </div>

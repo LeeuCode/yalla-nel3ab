@@ -48,8 +48,11 @@ require_once component('heading');
         if ($query->have_posts()) :
             while ($query->have_posts()) :
                 $query->the_post();
+
+                $t = ($count == 3) ? 'hx-get="' . get_next_posts_page_link($query->max_num_pages) . '" hx-trigger="revealed"
+                    hx-swap="afterend"' : '';
         ?>
-                <div class="col-12">
+                <div class="col-12" <?php echo (get_next_posts_page_link($query->max_num_pages)) ? $t : ''; ?>>
                     <div class="shadow-sm mb-3 position-relative rounded-2">
                         <img class="img-fluid rounded-2" src="<?php the_field('basic_image', $post->ID); ?>" alt="">
                         <div class="position-absolute bottom-0 start-0 p-3">
