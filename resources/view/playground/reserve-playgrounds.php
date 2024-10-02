@@ -21,6 +21,13 @@ require_once component('heading');
                 array(
                     'taxonomy' => 'section',
                     'hide_empty' => false,
+                    'meta_query' => array(
+                        array(
+                            'key'       => 'show_status',
+                            'value'     => 'playground',
+                            // 'compare'   => '='
+                        )
+                    )
                 )
             );
 

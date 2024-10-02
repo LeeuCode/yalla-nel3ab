@@ -332,7 +332,7 @@ if (function_exists('acf_add_local_field_group')):
 
 	acf_add_local_field_group(array(
 		'key' => 'group_66c2155333a81',
-		'title' => 'اعدادات الفريق',
+		'title' => 'اعدادات القسم',
 		'fields' => array(
 			array(
 				'key' => 'field_66c21569dbf87',
@@ -375,6 +375,32 @@ if (function_exists('acf_add_local_field_group')):
 				'min' => '',
 				'max' => '',
 				'step' => '',
+			),
+			array(
+				'key' => 'field_66fd1333c027f',
+				'label' => 'حالة الظهور',
+				'name' => 'show_status',
+				'type' => 'select',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'choices' => array(
+					'playground' => 'الملاعب',
+					'gym' => 'صالات الجيم',
+					'coach' => 'المدربين',
+				),
+				'default_value' => false,
+				'allow_null' => 0,
+				'multiple' => 0,
+				'ui' => 0,
+				'return_format' => 'value',
+				'ajax' => 0,
+				'placeholder' => '',
 			),
 		),
 		'location' => array(
@@ -1609,5 +1635,4 @@ if (function_exists('acf_add_local_field_group')):
 		'active' => true,
 		'description' => '',
 	));
-
 endif;

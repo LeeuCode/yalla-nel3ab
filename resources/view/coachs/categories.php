@@ -5,7 +5,6 @@ $link = site_url('home/');
 require_once component('heading');
 ?>
 
-
 <div class="container">
     <div class="row">
         <?php
@@ -22,6 +21,13 @@ require_once component('heading');
                 array(
                     'taxonomy' => 'section',
                     'hide_empty' => false,
+                    'meta_query' => array(
+                        array(
+                            'key'       => 'show_status',
+                            'value'     => 'coach',
+                            // 'compare'   => '='
+                        )
+                    )
                 )
             );
 
