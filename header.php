@@ -24,4 +24,4 @@ if (is_user_logged_in()) {
 </head>
 
 <body <?php body_class(); ?>>
-    <div class="app">
+    <div class="app slide-it">

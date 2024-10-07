@@ -8,7 +8,7 @@ $favorite_post = user_count_meta($user_id, 'favorite_post', $post->ID);
         <div class="position-relative">
             <img class="img-fluid mb-2 " src="<?php the_field('basic_image'); ?>" alt="">
 
-            <a hx-post="<?php echo site_url('action/favorite/' . $post->ID . '/'); ?>" hx-trigger="click" hx-swap="innerHTML" class="faveorite-btn icon-sm rounded-circle position-absolute top-0 end-0" role="button">
+            <a hx-post="<?php echo site_url('action/favorite/' . $post->ID . '/'); ?>" hx-trigger="click" hx-swap="innerHTML transition:true show:top" hx-target="closest .app" class="faveorite-btn icon-sm rounded-circle position-absolute top-0 end-0" role="button">
                 <i class="<?php echo ($favorite_post > 0) ? 'fa-solid' : 'fa-regular'; ?> fa-heart"></i>
             </a>
         </div>
@@ -35,7 +35,7 @@ $favorite_post = user_count_meta($user_id, 'favorite_post', $post->ID);
                     <input type="radio" name="rate" value="1" >
                 </div>
             </div>
-            <a hx-get="<?php echo site_url('playground/single/' . $post->ID . '/'); ?>" hx-swap="innerHTML show:top" hx-trigger="click" hx-target=".app" hx-on::before-request="showLoad()" class="z-index-2 stretched-link"></a>
+            <a hx-get="<?php echo site_url('playground/single/' . $post->ID . '/'); ?>" hx-swap="innerHTML transition:true show:top" hx-target="closest .app" hx-trigger="click" hx-on::before-request="showLoad()" class="z-index-2 stretched-link"></a>
         </div>
     </div>
 </div>

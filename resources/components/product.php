@@ -31,12 +31,12 @@ $t = ($count == 3) ? 'hx-get="' . get_next_posts_page_link($query->max_num_pages
             </div>
         </div>
         <h6 class="mb-2">
-            <a hx-get="<?php echo site_url('product/single/' . $post->ID . '/'); ?>" hx-swap="innerHTML show:top" hx-trigger="click" hx-target=".app" hx-on::before-request="showLoad()" class="text-dark font-x-11 fw-bold">
+            <a hx-get="<?php echo site_url('product/single/' . $post->ID . '/'); ?>" hx-swap="innerHTML transition:true show:top" hx-target="closest .app" hx-trigger="click"  hx-on::before-request="showLoad()" class="text-dark font-x-11 fw-bold">
                 <?php the_title(); ?>
             </a>
         </h6>
         <div class="d-flex gap-2">
-            <a hx-get="<?php echo site_url('product/single/' . $post->ID . '/'); ?>" hx-swap="innerHTML show:top" hx-trigger="click" hx-target=".app" hx-on::before-request="showLoad()" class="btn btn-sm btn-danger flex-grow-1 ">
+            <a hx-get="<?php echo site_url('product/single/' . $post->ID . '/'); ?>" hx-swap="innerHTML transition:true show:top" hx-target="closest .app" hx-trigger="click" hx-on::before-request="showLoad()" class="btn btn-sm btn-danger flex-grow-1 ">
                 <?php echo __('شراء الأن', 'qeema'); ?>
             </a>
             <a href="" class="btn btn-sm btn-light">

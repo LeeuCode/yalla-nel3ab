@@ -48,7 +48,7 @@ $end_time = get_post_meta($post->ID, 'end_time', true);
                     <span class="d-block text-secondary font-x-11 fw-bold"><?php echo __('تاريخ البدأ', 'qeema') . ': ' . $start_date; ?></span>
                 </div>
 
-                <a hx-get="<?php echo site_url('activity/single/' . $post->ID . '/'); ?>" hx-swap="innerHTML show:top" hx-trigger="click" hx-target=".app" hx-on::before-request="showLoad()" class="btn btn-sm font-x-12 btn-danger">
+                <a hx-get="<?php echo site_url('activity/single/' . $post->ID . '/'); ?>" hx-swap="innerHTML transition:true show:top" hx-target="closest .app" hx-trigger="click" hx-on::before-request="showLoad()" class="btn btn-sm font-x-12 btn-danger">
                     <?php echo __('طلب الانضمام', 'qeema'); ?>
                 </a>
             </div>

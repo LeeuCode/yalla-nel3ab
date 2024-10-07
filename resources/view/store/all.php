@@ -54,7 +54,7 @@ require_once component('heading');
                             <img src="<?php echo the_field('image', 'brand_' . $brand->term_id); ?>" alt="" class="icon-lg shadow-sm rounded-circle mb-2">
                             <h6 class="font-x-12 fw-bold m-0"><?php echo $brand->name ?></h6>
 
-                            <a hx-get="<?php echo site_url('products/' . $brand->term_id . '/'); ?>" hx-swap="innerHTML show:top" hx-trigger="click" hx-target=".app" hx-on::before-request="showLoad()" class="stretched-link"></a>
+                            <a hx-get="<?php echo site_url('products/' . $brand->term_id . '/'); ?>" hx-swap="innerHTML transition:true show:top" hx-target="closest .app" hx-trigger="click" hx-on::before-request="showLoad()" class="stretched-link"></a>
                             <!-- hx-on::before-request="showLoad()" -->
                         </div>
                     </div>

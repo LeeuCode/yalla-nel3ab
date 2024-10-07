@@ -27,7 +27,7 @@ $favorite_post = user_count_meta($user_id, 'favorite_post', $post->ID);
                 </div>
             </div>
         </div>
-        <a hx-get="<?php echo site_url('booking/academy/' . $post->ID . '/'); ?>" hx-swap="innerHTML show:top"
-            hx-trigger="click" hx-target=".app" class="z-index-2 stretched-link"></a>
+        <a hx-get="<?php echo site_url('booking/academy/' . $post->ID . '/'); ?>" hx-swap="innerHTML transition:true show:top" hx-target="closest .app"
+            hx-trigger="click" class="z-index-2 stretched-link"></a>
     </div>
 </div>

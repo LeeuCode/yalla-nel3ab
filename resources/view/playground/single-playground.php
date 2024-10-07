@@ -1,5 +1,5 @@
 <?php
-$post_id = $params['id'];
+$post_id = esc_sql($params['id']);
 
 $sectionID = get_first_term_by_id($post_id, 'section');
 

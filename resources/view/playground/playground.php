@@ -25,7 +25,8 @@ require_once component('heading');
     <?php
     get_template_part(PATH_COMPONENT . '/cities-filter', null, array(
         'post-type' => 'playground',
-        'url' => site_url('city/playground/' . $params['id'] . '/')
+        'url' => site_url('city/playground/' . $params['id'] . '/'),
+        'section_id' => $params['term_id']
     ));
     ?>
 
@@ -65,7 +66,7 @@ require_once component('heading');
             <div class="w-75 mx-auto text-center">
                 <img class="w-100 d-block mb-3" src="<?php echo get_template_directory_uri() . '/assets/images/not-found.svg'; ?>" alt="">
                 <p class="mb-2"><?php echo __('لا يوجد اي بيانات حتي الان', 'qeema'); ?></p>
-                <a hx-get="<?php echo site_url('home/'); ?>" hx-swap="innerHTML show:top" hx-trigger="click" hx-target=".app" hx-on::before-request="showLoad()" class="btn btn-danger px-5">
+                <a hx-get="<?php echo site_url('home/'); ?>" hx-swap="innerHTML transition:true show:top" hx-target="closest .app" hx-trigger="click" hx-on::before-request="showLoad()" class="btn btn-danger px-5">
                     <?php echo __('العوده الي الرئيسيه', 'qeema'); ?>
                 </a>
             </div>

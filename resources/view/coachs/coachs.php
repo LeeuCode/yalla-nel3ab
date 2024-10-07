@@ -26,7 +26,8 @@ require_once component('heading');
     <?php
     get_template_part(PATH_COMPONENT . '/cities-filter', null, array(
         'post-type' => 'coach',
-        'url' => site_url('city/coach/')
+        'url' => site_url('city/coach/'),
+        'section_id' => $params['term_id']
     ));
     ?>
 

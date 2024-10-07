@@ -63,8 +63,8 @@ require_once component('heading');
                 <img class="w-100 d-block mb-3"
                     src="<?php echo get_template_directory_uri() . '/assets/images/not-found.svg'; ?>" alt="">
                 <p class="mb-2"><?php echo __('لا يوجد اي بيانات حتي الان', 'qeema'); ?></p>
-                <a hx-get="<?php echo site_url('home/'); ?>" hx-swap="innerHTML show:top" hx-trigger="click"
-                    hx-target=".app" class="btn btn-danger px-5">
+                <a hx-get="<?php echo site_url('home/'); ?>" hx-swap="innerHTML transition:true show:top" hx-target="closest .app" hx-trigger="click"
+                     class="btn btn-danger px-5">
                     <?php echo __('العوده الي الرئيسيه', 'qeema'); ?>
                 </a>
             </div>

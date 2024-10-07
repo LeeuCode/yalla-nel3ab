@@ -10,13 +10,13 @@
 <div class="header">
     <div class="header-box justify-content-between px-3 py-4 h-auto" style="background-image: url(<?php echo get_template_directory_uri() . '/assets/images/bg-image.png'; ?>)">
 
-        <a hx-get="<?php echo $link; ?>" hx-swap="innerHTML show:top" hx-trigger="click" hx-target=".app" hx-target=".app" hx-on::before-request="showLoad()" class="btn btn-sm btn-outline-light  border-color-selver border-color-selver">
+        <a hx-get="<?php echo $link; ?>" hx-swap="innerHTML transition:true show:top" hx-target="closest .app" hx-trigger="click" hx-on::before-request="showLoad()" class="btn btn-sm btn-outline-light  border-color-selver border-color-selver">
             <i class="fa-solid fa-chevron-right"></i>
         </a>
 
         <img class="w-25" src="<?php echo get_template_directory_uri() . '/assets/images/login-header.png'; ?>" alt="">
 
-        <a hx-get="<?php echo site_url('notification/'); ?>" hx-swap="innerHTML show:top" hx-trigger="click" hx-target=".app" hx-target=".app" hx-on::before-request="showLoad()" class="icon-sm fs-5 bg-white- rounded-pill d-flex align-items-center justify-content-center  position-relative">
+        <a hx-get="<?php echo site_url('notification/'); ?>" hx-swap="innerHTML transition:true show:top" hx-target="closest .app" hx-trigger="click" hx-on::before-request="showLoad()" class="icon-sm fs-5 bg-white- rounded-pill d-flex align-items-center justify-content-center  position-relative">
             <i class="fa-solid fa-bell text-white"></i>
 
             <?php

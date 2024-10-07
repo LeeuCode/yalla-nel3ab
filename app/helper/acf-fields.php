@@ -393,6 +393,7 @@ if (function_exists('acf_add_local_field_group')):
 					'playground' => 'الملاعب',
 					'gym' => 'صالات الجيم',
 					'coach' => 'المدربين',
+					'academy' => 'الاكادميات',
 				),
 				'default_value' => false,
 				'allow_null' => 0,
@@ -1635,4 +1636,5 @@ if (function_exists('acf_add_local_field_group')):
 		'active' => true,
 		'description' => '',
 	));
+
 endif;

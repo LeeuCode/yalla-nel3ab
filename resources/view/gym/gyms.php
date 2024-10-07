@@ -27,7 +27,7 @@ require_once component('heading');
     <?php
     get_template_part(PATH_COMPONENT . '/cities-filter', null, array(
         'post-type' => 'gym',
-        'url' => site_url('city/gyms/')
+        'url' => site_url('city/gyms/'),
     ));
     ?>
 

@@ -51,7 +51,7 @@ require_once component('heading');
                             </div>
                         </div> -->
                         </div>
-                        <a hx-get="<?php echo site_url('coachs/' . $section->term_id . '/'); ?>" hx-swap="innerHTML show:top" hx-trigger="click" hx-target=".app" hx-on::before-request="showLoad()" class="z-index-2 stretched-link"></a>
+                        <a hx-get="<?php echo site_url('coachs/' . $section->term_id . '/'); ?>" hx-swap="innerHTML transition:true show:top" hx-target="closest .app" hx-trigger="click" hx-on::before-request="showLoad()" class="z-index-2 stretched-link"></a>
                     </div>
                 </div>
             <?php endforeach; ?>

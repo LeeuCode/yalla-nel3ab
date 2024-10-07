@@ -63,7 +63,7 @@ if ($logoID) {
                         <?php echo __('كورة قدم - تنس - سله- طايرة - بولنج - بوكس', 'qeema'); ?>
                     </p>
                 </div>
-                <a hx-get="<?php echo site_url('reserve-playgrounds/'); ?>" hx-swap="innerHTML show:top" hx-trigger="click" hx-target=".app" hx-on::before-request="showLoad()" class="stretched-link"></a>
+                <a hx-get="<?php echo site_url('reserve-playgrounds/'); ?>" hx-swap="innerHTML transition:true show:top" hx-target="closest .app" hx-trigger="click" hx-on::before-request="showLoad()" class="stretched-link"></a>
             </div>
         </div>
 
@@ -76,7 +76,7 @@ if ($logoID) {
                         <?php echo __('كورة قدم - تنس - سله- طايرة - بولنج - بوكس', 'qeema'); ?>
                     </p>
                 </div>
-                <a hx-get="<?php echo site_url('academies/sections/'); ?>" hx-swap="innerHTML show:top" hx-trigger="click" hx-target=".app" hx-on::before-request="showLoad()" hx-on::before-request="showLoad()" class="stretched-link"></a>
+                <a hx-get="<?php echo site_url('academies/sections/'); ?>" hx-swap="innerHTML transition:true show:top" hx-target="closest .app" hx-trigger="click" hx-on::before-request="showLoad()" class="stretched-link"></a>
             </div>
         </div>
 
@@ -89,7 +89,7 @@ if ($logoID) {
                         <?php echo __('كورة قدم - تنس - سله- طايرة - بولنج - بوكس', 'qeema'); ?>
                     </p>
                 </div>
-                <a hx-get="<?php echo site_url('coachs/categories/'); ?>" hx-swap="innerHTML show:top" hx-trigger="click" hx-target=".app" hx-on::before-request="showLoad()" class="stretched-link"></a>
+                <a hx-get="<?php echo site_url('coachs/categories/'); ?>" hx-swap="innerHTML transition:true show:top" hx-target="closest .app" hx-trigger="click" hx-on::before-request="showLoad()" class="stretched-link"></a>
             </div>
         </div>
 
@@ -102,7 +102,7 @@ if ($logoID) {
                         <?php echo __('كورة قدم - تنس - سله- طايرة - بولنج - بوكس', 'qeema'); ?>
                     </p>
                 </div>
-                <a hx-get="<?php echo site_url('championships/'); ?>" hx-swap="innerHTML show:top" hx-trigger="click" hx-target=".app" hx-on::before-request="showLoad()" class="stretched-link"></a>
+                <a hx-get="<?php echo site_url('championships/'); ?>" hx-swap="innerHTML transition:true show:top" hx-target="closest .app" hx-trigger="click" hx-on::before-request="showLoad()" class="stretched-link"></a>
             </div>
         </div>
 
@@ -115,7 +115,7 @@ if ($logoID) {
                         <?php echo __('كورة قدم - تنس - سله- طايرة - بولنج - بوكس', 'qeema'); ?>
                     </p>
                 </div>
-                <a hx-get="<?php echo site_url('championships/schedule/'); ?>" hx-swap="innerHTML show:top" hx-trigger="click" hx-target=".app" hx-on::before-request="showLoad()" class="stretched-link"></a>
+                <a hx-get="<?php echo site_url('championships/schedule/'); ?>" hx-swap="innerHTML transition:true show:top" hx-target="closest .app" hx-trigger="click" hx-on::before-request="showLoad()" class="stretched-link"></a>
             </div>
         </div>
 
@@ -128,7 +128,7 @@ if ($logoID) {
                         <?php echo __('الكارديو - اللياقة البدنية - المشي - رفع أثقال - بناء أجسام', 'qeema'); ?>
                     </p>
                 </div>
-                <a hx-get="<?php echo site_url('gyms/'); ?>" hx-swap="innerHTML show:top" hx-trigger="click" hx-target=".app" hx-on::before-request="showLoad()" class="stretched-link"></a>
+                <a hx-get="<?php echo site_url('gyms/'); ?>" hx-swap="innerHTML transition:true show:top" hx-target="closest .app" hx-trigger="click" hx-on::before-request="showLoad()" class="stretched-link"></a>
             </div>
         </div>
 
@@ -141,7 +141,7 @@ if ($logoID) {
                         <?php echo __('منتجات رياضيه', 'qeema'); ?>
                     </p>
                 </div>
-                <a hx-get="<?php echo site_url('store/'); ?>" hx-swap="innerHTML show:top" hx-trigger="click" hx-target=".app" hx-on::before-request="showLoad()" class="stretched-link"></a>
+                <a hx-get="<?php echo site_url('store/'); ?>" hx-swap="innerHTML transition:true show:top" hx-target="closest .app" hx-trigger="click" hx-on::before-request="showLoad()" class="stretched-link"></a>
             </div>
         </div>
     </div>

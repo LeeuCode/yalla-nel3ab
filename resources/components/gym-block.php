@@ -21,6 +21,6 @@ $t = ($count == 3) ? 'hx-get="' . get_next_posts_page_link($query->max_num_pages
                 </div>
             </div>
         </div>
-        <a hx-get="<?php echo site_url('gym/single/' . $post->ID . '/'); ?>" hx-swap="innerHTML show:top" hx-trigger="click" hx-target=".app" hx-on::before-request="showLoad()" class="z-index-2 stretched-link"></a>
+        <a hx-get="<?php echo site_url('gym/single/' . $post->ID . '/'); ?>" hx-swap="innerHTML transition:true show:top" hx-target="closest .app" hx-trigger="click" hx-on::before-request="showLoad()" class="z-index-2 stretched-link"></a>
     </div>
 </div>
